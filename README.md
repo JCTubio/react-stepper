@@ -71,8 +71,11 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 |href|Link to send them to on click|undefined|string|
 |onClick|Event handler for when the step is clicked|undefined|function|
 
+## Original Package
 
-## Author
+[react-stepper-horizontal](https://www.npmjs.com/package/react-stepper-horizontal)
+
+## Original Author
 
 InJung Chung / [@mu29](http://mu29.github.io/)
 
