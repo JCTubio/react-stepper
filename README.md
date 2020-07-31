@@ -1,11 +1,11 @@
-# react-simple-stepper
+# react-simple-stepper-component
 Well-designed stepper component for react
 
 ## Installation
 ```
-npm install react-simple-stepper --save
+npm install react-simple-stepper-component --save
 ```
-Then just add `import Stepper from 'react-simple-stepper';` into your file.
+Then just add `import Stepper from 'react-simple-stepper-component';` into your file.
 
 ## Screenshot
 <img src="https://raw.githubusercontent.com/mu29/react-stepper/master/example/example.png" width="600" />
