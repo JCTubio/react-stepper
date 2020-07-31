@@ -21,7 +21,7 @@
     "stepper",
     "step"
   ],
-  "author": "Juan Cruz Tubio <juancruztubio@gmail.com>",
+  "author": "jctubio <juancruztubio@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JCTubio/react-stepper/issues"
