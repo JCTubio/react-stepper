@@ -37,6 +37,9 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 |completeTitleColor|Completed title color|#000|string|
 |defaultTitleColor|Default title color - not active or completed|#757575|string|
 |circleFontColor|Circle text color (for index)|#FFF|string|
+|lineHeight|line height||number|
+|leftBarOffset|Left bar offset|50%|string|
+|rightBarOffset|Right bar offset|50%|string|
 |size|Circle size|32|number|
 |circleFontSize|Circle text size|16|number|
 |titleFontSize|Title text size|16|number|
