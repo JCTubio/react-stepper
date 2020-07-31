@@ -113,7 +113,7 @@ export default class Step extends Component {
   }
 
   render() {
-    const { title, icon, index, active, completed, first, isLast, href, onClick } = this.props;
+    const { title, icon, index, active, completed, first, isLast, href, onClick, hasLabel } = this.props;
 
     const styles = this.getStyles();
     const circleStyle = Object.assign(
@@ -131,14 +131,21 @@ export default class Step extends Component {
 
     const stepContent = icon ? <img src={icon} alt={index + 1} /> : index + 1;
 
-    return (
-      <div style={ styles.step }>
-        <div style={ circleStyle }>
-        {active || completed ? (
+    const renderLabel = () => {
+      if(hasLabel){
+        return active || completed ? (
           <a href={href} onClick={onClick} style={ styles.index }>{ stepContent }</a>
         ) : (
           <span style={ styles.index }>{ stepContent }</span>
-        )}
+        )
+      }
+      return null;
+    }
+
+    return (
+      <div style={ styles.step }>
+        <div style={ circleStyle }>
+        {renderLabel()}
         </div>
         {active || completed ? (
           <a href={href} onClick={onClick} style={ titleStyle }>{ title }</a>
@@ -171,7 +178,8 @@ Step.defaultProps = {
   lineMarginOffset: 4,
   defaultBorderWidth: 3,
   leftBarOffset: '50%',
-  rightBarOffset: '50%'
+  rightBarOffset: '50%',
+  hasLabel: true
 };
 
 Step.propTypes = {
@@ -213,5 +221,6 @@ Step.propTypes = {
   defaultBorderWidth: PropTypes.number,
   lineHeight: PropTypes.number,
   leftBarOffset: PropTypes.string,
-  rightBarOffset: PropTypes.string
+  rightBarOffset: PropTypes.string,
+  hasLabel: PropTypes.bool
 };
