@@ -56,7 +56,7 @@ export default class Step extends Component {
         borderStyle: completeBorderStyle,
       },
       index: {
-        lineHeight: `${lineHeight || (size + circleFontSize / 4)}px`,
+        lineHeight: `${size + circleFontSize / 4}px`,
         color: circleFontColor
       },
       title: {
@@ -78,8 +78,8 @@ export default class Step extends Component {
       },
       leftBar: {
         position: 'absolute',
-        top: circleTop + size / 2,
-        height: 1,
+        top: circleTop + (size - lineHeight) / 2,
+        height: lineHeight,
         borderTopStyle: barStyle,
         borderTopWidth: 1,
         borderTopColor: defaultBarColor,
@@ -87,24 +87,27 @@ export default class Step extends Component {
         right: leftBarOffset,
         marginRight: size / 2 + lineMarginOffset,
         opacity: defaultOpacity,
+        zIndex: -1
       },
       rightBar: {
         position: 'absolute',
-        top: circleTop + size / 2,
-        height: 1,
+        top: circleTop + (size - lineHeight) / 2,
+        height: lineHeight,
         borderTopStyle: barStyle,
-        borderTopWidth: 1,
+        borderTopWidth: lineHeight,
         borderTopColor: defaultBarColor,
         right: 0,
         left: rightBarOffset,
         marginLeft: size / 2 + lineMarginOffset,
         opacity: defaultOpacity,
+        zIndex: -1
       },
       completedBar: {
         borderTopStyle: barStyle,
-        borderTopWidth: 1,
+        borderTopWidth: lineHeight,
         borderTopColor: completeBarColor,
         opacity: completeOpacity,
+        zIndex: -1
       },
     };
   }
