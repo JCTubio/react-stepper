@@ -1,6 +1,6 @@
 {
   "name": "react-simple-stepper-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Well-designed stepper component for react",
   "main": "lib/index.js",
   "scripts": {
