@@ -24,7 +24,7 @@ function Stepper({
   circleTop, titleTop, completeOpacity, activeOpacity, defaultOpacity,
   completeTitleOpacity, activeTitleOpacity, defaultTitleOpacity, barStyle,
   defaultBorderColor, completeBorderColor, activeBorderColor, defaultBorderStyle,
-  completeBorderStyle, activeBorderStyle, defaultBarColor, completeBarColor, lineMarginOffset, defaultBorderWidth
+  completeBorderStyle, activeBorderStyle, defaultBarColor, completeBarColor, lineMarginOffset, defaultBorderWidth, lineHeight, rightBarOffset, leftBarOffset
 }) {
   return (
     <div style={ styles.root }>
@@ -71,6 +71,9 @@ function Stepper({
             defaultBarColor={defaultBarColor}
             completeBarColor={completeBarColor}
             lineMarginOffset={lineMarginOffset}
+            lineHeight={lineHeight}
+            leftBarOffset={leftBarOffset}
+            rightBarOffset={rightBarOffset}
           />
         )) }
       </div>
@@ -113,7 +116,10 @@ Stepper.propTypes = {
   completeBorderStyle: PropTypes.string,
   activeBorderStyle: PropTypes.string,
   lineMarginOffset: PropTypes.number,
-  defaultBorderWidth: PropTypes.number
+  defaultBorderWidth: PropTypes.number,
+  lineHeight: PropTypes.string,
+  leftBarOffset: PropTypes.string,
+  rightBarOffset: PropTypes.string
 };
 
 export default Stepper;
