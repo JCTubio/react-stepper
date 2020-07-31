@@ -55,7 +55,7 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 |defaultTitleColor|Default title color - not active or completed|#757575|string|
 |defaultTitleOpacity|Default title opacity|1|string|
 |leftBarOffset|Left bar offset|50%|string|
-|lineHeight|line height||number|
+|lineHeight|line height (Thickness of the line between the steps)||number|
 |lineMarginOffset|Offset for line margin|4|number|
 |rightBarOffset|Right bar offset|50%|string|
 |size|Circle size|32|number|

@@ -81,7 +81,7 @@ export default class Step extends Component {
         top: circleTop + (size - lineHeight) / 2,
         height: lineHeight,
         borderTopStyle: barStyle,
-        borderTopWidth: 1,
+        borderTopWidth: lineHeight,
         borderTopColor: defaultBarColor,
         left: 0,
         right: leftBarOffset,
