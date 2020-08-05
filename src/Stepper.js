@@ -118,7 +118,7 @@ Stepper.propTypes = {
   activeBorderStyle: PropTypes.string,
   lineMarginOffset: PropTypes.number,
   defaultBorderWidth: PropTypes.number,
-  lineHeight: PropTypes.string,
+  lineHeight: PropTypes.number,
   leftBarOffset: PropTypes.string,
   rightBarOffset: PropTypes.string,
   hasLabel: PropTypes.bool
